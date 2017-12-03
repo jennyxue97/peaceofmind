@@ -7,10 +7,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
+body,h1,h2,h3,h4,h5,h6, span {font-family: "Lato", sans-serif;}
+
+html, body {
     height: 100%;
-    color: #FFFFFF;
+    color: #000000;
     line-height: 1.8;
 }
 
@@ -24,20 +25,37 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url("background.jpg");
-    min-height: 100%;
+    background-image: url("background3.jpg");
+    min-height: 700px;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("background.jpg");
+    background-image: url("background3.jpg");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("background.jpg");
+    background-image: url("background3.jpg");
     min-height: 400px;
+}
+
+/* Third image (Contact) */
+.stimg-1 {
+    background-image: url("stat1.png");
+    min-height: 600px;
+
+}
+
+.stimg-2 {
+    min-height: 100px;
+
+}
+
+.whitespace-1 {
+    min-height: 30px;
+
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -83,7 +101,20 @@ body, html {
   </div>
 </div>
 
-<!-- Container (Stats Section) -->
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+        <span class="w3-xlarge">BEHIND THE NUMBERS</span>
+</div>
+
+<!-- First statistics image -->
+<div class="stimg-1 w3-display-container">
+</div>
+
+<!-- First statistics image -->
+<div class="whitespace-1 w3-display-container">
+    </div>
+
+
+<!-- Container (Stats Section)
 <div class="w3-content w3-container w3-padding-64" id="stats">
   <h3 class="w3-center">STATS</h3>
   <p class="w3-center"><em>I love photography</em></p>
@@ -96,8 +127,8 @@ body, html {
       <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
+    <! Hide this text on small devices -->
+    <!-- <div class="w3-col m6 w3-hide-small w3-padding-large">
       <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -116,26 +147,8 @@ body, html {
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
   </div>
-</div>
+</div> -->
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
-  </div>
-</div>
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -143,6 +156,7 @@ body, html {
     <span class="w3-xxlarge w3-text-white w3-wide">STATISTICS</span>
   </div>
 </div>
+
 
 <!-- Container (App Section) -->
 <div class="w3-content w3-container w3-padding-64" id="app">
