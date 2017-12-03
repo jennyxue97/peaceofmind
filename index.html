@@ -146,47 +146,71 @@ body, html {
 
 <!-- Container (App Section) -->
 <div class="w3-content w3-container w3-padding-64" id="app">
-  <h3 class="w3-center">Our App</h3>
-  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+  <h3 class="w3-center">Get your Peace of Mind Score!</h3>
+  <p class="w3-center"><em>Check how effective your company is at raising awareness of mental health <br>issues and providing resources to those who may need help.</em></p></br>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
-    </div>
+  <form>
+    <br><label>Are you a company located in the United States or international?</label>
+    <select id="country">
+        <option value="blank"></option>        
+        <option value="United States">United States</option>
+        <option value="International">International</option>
+    </select></br>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
+    <br><label>How many employees does your company or organization have?</label>
+    <select id="employees">
+        <option value="blank"></option>                
+        <option value="1-5">1-5</option>
+        <option value="6-25">6-25</option>
+        <option value="26-100">26-100</option>
+        <option value="100-500">100-500</option>
+        <option value="MoreThan1000">More than 1000</option>
+    </select></br>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
+    <br><label>Primarily a technology company or organization?</label>
+    <select id="tech">
+        <option value="blank"></option> 
+        <option value="TechYes">Yes</option>
+        <option value="TechNo">No</option>
+    </select></br>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
+    <br><label>Are mental health benefits provided?</label>
+    <select id="benefits">
+        <option value="blank"></option> 
+        <option value="BenefitsYes">Yes</option>
+        <option value="BenefitsNo">No</option>
+    </select></br>
 
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
+    <br><label>Is mental health ever discussed as part of an employee wellness program?</label>
+    <select id="wellness">
+        <option value="blank"></option> 
+        <option value="WellnessYes">Yes</option>
+        <option value="WellnessNo">No</option>
+    </select></br>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
-    </div>
+    <br><label>Are resources provided to learn more about mental health issues and how to seek help?</label>
+    <select id="help">
+        <option value="blank"></option> 
+        <option value="HelpYes">Yes</option>
+        <option value="HelpNo">No</option>
+    </select></br>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-    </div>
+    <br><label>Is anonymity protected if you choose to take advantage of mental health or substance abuse treatment resources?</label>
+    <select id="anonymity">
+        <option value="blank"></option> 
+        <option value="AnonymityYes">Yes</option>
+        <option value="AnonymityNo">No</option>
+    </select></br>
 
-    <div class="w3-col m3">
-      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
-</div>
+    <br><label>Is it easy to take medical leave for a mental health condition?</label>
+    <select id="leave">
+        <option value="blank"></option> 
+        <option value="LeaveYes">Yes</option>
+        <option value="LeaveNo">No</option>
+    </select></br>
+    
+    <br><input type="button" id="submit_button" value="Submit" /> </br>
+  </form>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
