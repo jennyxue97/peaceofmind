@@ -1,6 +1,6 @@
 $(function () {
     var key = "jrBBBr0ocoRjHyieuZznMqw8kx1MdIZRfe1taf5/cS/tvHOvyeeI0R33H6Rus/OKGhvR0ivUqYrhA5shgeebgg==";
-    var url = 'https://ussouthcentral.services.azureml.net/workspaces/72430c7272eb41b09f2cbf85c792b7f2/services/fc87edce0e714613b7b2e4a5ecdece7d/execute?api-version=2.0&details=true';
+    var url = 'https://ussouthcentral.services.azureml.net/workspaces/72430c7272eb41b09f2cbf85c792b7f2/services/fc87edce0e714613b7b2e4a5ecdece7d/execute?api-version=2.0&format=swagger';
 
     // Handle clicks of the Analyze button
     $("#submit_button").click(function() {
@@ -31,6 +31,14 @@ $(function () {
         wrapper.GlobalParameters = new Object();
 
         // Call ML Web service
+        // $.ajax({
+        //     type: "POST",
+        //     url: "~/request.py",
+        //     data: { param: text}
+        //   }).done(function( o ) {
+        //      // do something
+        //   });
+
         $.ajax({
             type: "POST",
             url: url,
