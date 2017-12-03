@@ -4,7 +4,7 @@ $(function () {
 
     // Handle clicks of the Analyze button
     $("#submit_button").click(function() {
-        // Get user input
+        // Get user input        
         var country = $("#country").val();
         var state = $("state").val();
         var employees = $("#employees").val();
@@ -18,7 +18,7 @@ $(function () {
         // Build JSON input
         var columns = ["Country", "state", "treatment", "no_employees", "tech_company", "benefits", "wellness_program", "seek_help", "anonymity", "leave", "col1", "col2", "Latitude", "Country2", "country-general"];
         var values = [country, state, 1, employees, tech, benefits, wellness, help, anonymity, leave, 0, 0, 0, country, country];
-
+        
         var input1 = new Object();
         input1.ColumnNames = columns;
         input1.Values = [values];
@@ -48,7 +48,7 @@ $(function () {
 });
 
 function showResults(data) {
-    var late = data.Results.output1.value.Values[0][7];
-    var probability = data.Results.output1.value.Values[0][8];
-    alert("Mental Health Awareness Score: " + Math.floor(probability * 100) + "%");
+    document.write(data.Results.output1.value.Values);   
+    var scoreProb = data.Results.output1.value.Values[0][11];
+    alert("Mental Health Awareness Score: " + scoreProb);
 }
