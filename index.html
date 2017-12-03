@@ -78,28 +78,25 @@ html, body {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#stats" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> STATISTICS</a>
-    <a href="#app" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> APP</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> ABOUT US</a>
-    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i> -->
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#stats" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> The Statistics</a>
+    <a href="#score" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Your Awareness Score</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> About Us </a>
     </a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#stats" class="w3-bar-item w3-button" onclick="toggleFunction()">STATISTICS</a>
-    <a href="#app" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
+    <a href="#stats" class="w3-bar-item w3-button" onclick="toggleFunction()">The Statistics</a>
+    <a href="#score" class="w3-bar-item w3-button" onclick="toggleFunction()">Your Awareness Score</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">About Us</a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity">PEACE <span class="w3-hide-small">OF</span> MIND</span>
+    <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity">Peace <span class="w3-hide-small">of</span> Mind</span>
   </div>
 </div>
 
@@ -108,102 +105,152 @@ html, body {
 </div>         -->
 
 <!-- First statistics image -->
-<div class="stimg-1 w3-display-container">
+<div class="stimg-1 w3-display-container" id="stats">
 </div>
 
 <!-- First statistics image -->
 <div class="whitespace-1 w3-display-container">
 </div>
 
-
-
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-        <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity"> YOUR SCORE</span>
-    </div>  
-  </div>
+        <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity"> Your Awareness Score</span>
+  </div>  
 </div>
-<div class="whitespace-1 w3-display-container">
-    </div>
-<!-- 
-<div class="w3-content w3-container w3-padding-64" id="app">
+
+<div class="w3-content w3-container w3-padding-64" id="score">
   <h3 class="w3-center">Get your Peace of Mind Score!</h3>
   <p class="w3-center"><em>Check how effective your company is at raising awareness of mental health <br>issues and providing resources to those who may need help.</em></p></br>
 
   <form>
-    <br><label>Are you a company located in the United States or international?</label>
-    <select id="country">
-        <option value="blank"></option>        
-        <option value="United States">United States</option>
-        <option value="International">International</option>
-    </select></br>
-
-    <br><label>How many employees does your company or organization have?</label>
-    <select id="employees">
-        <option value="blank"></option>                
-        <option value="1-5">1-5</option>
-        <option value="6-25">6-25</option>
-        <option value="26-100">26-100</option>
-        <option value="100-500">100-500</option>
-        <option value="MoreThan1000">More than 1000</option>
-    </select></br>
-
-    <br><label>Primarily a technology company or organization?</label>
-    <select id="tech">
-        <option value="blank"></option> 
-        <option value="TechYes">Yes</option>
-        <option value="TechNo">No</option>
-    </select></br>
-
-    <br><label>Are mental health benefits provided?</label>
-    <select id="benefits">
-        <option value="blank"></option> 
-        <option value="BenefitsYes">Yes</option>
-        <option value="BenefitsNo">No</option>
-    </select></br>
-
-    <br><label>Is mental health ever discussed as part of an employee wellness program?</label>
-    <select id="wellness">
-        <option value="blank"></option> 
-        <option value="WellnessYes">Yes</option>
-        <option value="WellnessNo">No</option>
-    </select></br>
-
-    <br><label>Are resources provided to learn more about mental health issues and how to seek help?</label>
-    <select id="help">
-        <option value="blank"></option> 
-        <option value="HelpYes">Yes</option>
-        <option value="HelpNo">No</option>
-    </select></br>
-
-    <br><label>Is anonymity protected if you choose to take advantage of mental health or substance abuse treatment resources?</label>
-    <select id="anonymity">
-        <option value="blank"></option> 
-        <option value="AnonymityYes">Yes</option>
-        <option value="AnonymityNo">No</option>
-    </select></br>
-
-    <br><label>Is it easy to take medical leave for a mental health condition?</label>
-    <select id="leave">
-        <option value="blank"></option> 
-        <option value="LeaveYes">Yes</option>
-        <option value="LeaveNo">No</option>
-    </select></br>
-    
+      <br><label>Are you a company or organization located in the United States or international?</label>
+      <select id="country">
+          <option value="blank"></option>        
+          <option value="United States">United States</option>
+          <option value="International">International</option>
+      </select></br>
+  
+      <br><label>If United States, in what state is the company or organization located?</label>
+      <select id="state">
+          <option value="blank"></option>        
+          <option value="AL">Alabama</option>
+          <option value="AK">Alaska</option>
+          <option value="AZ">Arizona</option>
+          <option value="AR">Arkansas</option>
+          <option value="CA">California</option>
+          <option value="CO">Colorado</option>
+          <option value="CT">Connecticut</option>
+          <option value="DE">Delaware</option>
+          <option value="DC">District Of Columbia</option>
+          <option value="FL">Florida</option>
+          <option value="GA">Georgia</option>
+          <option value="HI">Hawaii</option>
+          <option value="ID">Idaho</option>
+          <option value="IL">Illinois</option>
+          <option value="IN">Indiana</option>
+          <option value="IA">Iowa</option>
+          <option value="KS">Kansas</option>
+          <option value="KY">Kentucky</option>
+          <option value="LA">Louisiana</option>
+          <option value="ME">Maine</option>
+          <option value="MD">Maryland</option>
+          <option value="MA">Massachusetts</option>
+          <option value="MI">Michigan</option>
+          <option value="MN">Minnesota</option>
+          <option value="MS">Mississippi</option>
+          <option value="MO">Missouri</option>
+          <option value="MT">Montana</option>
+          <option value="NE">Nebraska</option>
+          <option value="NV">Nevada</option>
+          <option value="NH">New Hampshire</option>
+          <option value="NJ">New Jersey</option>
+          <option value="NM">New Mexico</option>
+          <option value="NY">New York</option>
+          <option value="NC">North Carolina</option>
+          <option value="ND">North Dakota</option>
+          <option value="OH">Ohio</option>
+          <option value="OK">Oklahoma</option>
+          <option value="OR">Oregon</option>
+          <option value="PA">Pennsylvania</option>
+          <option value="RI">Rhode Island</option>
+          <option value="SC">South Carolina</option>
+          <option value="SD">South Dakota</option>
+          <option value="TN">Tennessee</option>
+          <option value="TX">Texas</option>
+          <option value="UT">Utah</option>
+          <option value="VT">Vermont</option>
+          <option value="VA">Virginia</option>
+          <option value="WA">Washington</option>
+          <option value="WV">West Virginia</option>
+          <option value="WI">Wisconsin</option>
+          <option value="WY">Wyoming</option>
+      </select></br>
+  
+      <br><label>How many employees does your company or organization have?</label>
+      <select id="employees">
+          <option value="blank"></option>                
+          <option value="1-5">1-5</option>
+          <option value="6-25">6-25</option>
+          <option value="26-100">26-100</option>
+          <option value="100-500">100-500</option>
+          <option value="MoreThan1000">More than 1000</option>
+      </select></br>
+  
+      <br><label>Primarily a technology company or organization?</label>
+      <select id="tech">
+          <option value="blank"></option> 
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+      </select></br>
+  
+      <br><label>Are mental health benefits provided?</label>
+      <select id="benefits">
+          <option value="blank"></option> 
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+      </select></br>
+  
+      <br><label>Is mental health ever discussed as part of an employee wellness program?</label>
+      <select id="wellness">
+          <option value="blank"></option> 
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+      </select></br>
+  
+      <br><label>Are resources provided to learn more about mental health issues and how to seek help?</label>
+      <select id="help">
+          <option value="blank"></option> 
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+      </select></br>
+  
+      <br><label>Is anonymity protected if you choose to take advantage of mental health or substance abuse treatment resources?</label>
+      <select id="anonymity">
+          <option value="blank"></option> 
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+      </select></br>
+  
+      <br><label>Is it easy to take medical leave for a mental health condition?</label>
+      <select id="leave">
+          <option value="blank"></option> 
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+      </select></br>
+          
     <br><input type="button" id="submit_button" value="Submit" /> </br>
   </form>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle">
-              <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity"> ABOUT US</span>
-          </div>  
-        </div>
-      </div>
+  <div class="w3-display-middle">
+    <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity"> About Us</span>
+  </div>  
+</div>
 
-<!-- Container (About Us Section) -->
+<!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <p class="w3-center"><em>Get in contact!</em></p>
 
@@ -238,17 +285,17 @@ html, body {
 
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-on">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <!-- <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <div class="w3-xlarge w3-section">
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div> -->
-  <p>built as a YHack 2017 project in order to promote mental health awareness</p>
+    <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+    <p>Built For YHack 2017 To Promote Mental Health Awareness</p>    
+  </div>
 </footer>
  
 <!-- Add Google Maps -->
