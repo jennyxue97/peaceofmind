@@ -24,6 +24,11 @@ html, body {
     background-size: cover;
 }
 
+.stimg-1, .stimg-2, .whitespace-1 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /* First image (Logo. Full height) */
 .bgimg-1 {
     background-image: url("background3.jpg");
@@ -55,10 +60,10 @@ html, body {
 }
 
 .whitespace-1 {
-    min-height: 30px;
+    min-height: 50px;
 
 }
-</div>
+
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -103,10 +108,8 @@ html, body {
   </div>
 </div>
 
-<!-- <div class="w3-row w3-center w3-dark-grey w3-padding-32 w3-display-container" id="stats">
-    <span class="w3-xlarge">BEHIND THE NUMBERS</span>
-</div>         -->
-
+<div class="whitespace-1 w3-display-container"  id="stats">
+    </div>
 <!-- First statistics image -->
 <div class="stimg-1 w3-display-container">
 </div>
@@ -114,7 +117,6 @@ html, body {
 <!-- First statistics image -->
 <div class="whitespace-1 w3-display-container">
 </div>
-
 
 
 <!-- Second Parallax Image with Portfolio Text -->
@@ -195,45 +197,39 @@ html, body {
   </form>
 </div>
 
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<!Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="about">
         <div class="w3-display-middle">
               <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity"> ABOUT US</span>
           </div>  
         </div>
       </div>
 
-<!-- Container (About Us Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <p class="w3-center"><em>Get in contact!</em></p>
 
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <p>Made by a team of An Le, Binh Le, and Jenny Xue for YHack 2017.</p>>
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
+<div class="w3-content w3-container w3-padding-32">
+    <div class="w3-row">
+        <div class="w3-third w3-section">
+            <span class="w3-xlarge">TEAM</span><br>
+            We are a team of two Computer Science undergraduates from MIT and one Economics undergraduate from Yale 
+            who are passionate about mental health awareness. 
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>
+        <div class="w3-third w3-section">
+            <span class="w3-xlarge">GOAL</span><br>
+            Studies have shown that there is a direct correlation between workplaces that are 
+            accepting of mental health issues and have happier employees with better productivity.</br>
+            <br>Our goal is to promote mental health awareness in the workplace and 
+            provide information on how organizations can invest in the prevention of mental illnesses.</br>
+        </div>
+        <div class="w3-third w3-section">
+            <span class="w3-xlarge">RESEARCH</span><br>
+            Backed by data from the NIH, our model analyzes thousands of datapoints from employees
+            across the United States while considering factors such as:
+            <li>Whether if the company is in the tech field</li>
+            <li>Whether if the company provides mental health benefits</li>
+            <li>Whether if the company has a wellness program</li>
+            <li>The number of employees in the company</li>
+        </div>
     </div>
-  </div>
 </div>
 
 
